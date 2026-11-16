@@ -121,3 +121,16 @@ let botResponse = "";
     }
 }
 
+// Simpan response AI
+
+messages.push({
+    role: "assistant",
+    content: botResponse
+});
+    } catch (error) {
+        console.error(error);
+        botContent.textContent =
+            "Maaf, terjadi kesalahan: " +
+            error.message;
+    } finally {
+      
