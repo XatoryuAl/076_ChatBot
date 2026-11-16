@@ -133,4 +133,10 @@ messages.push({
             "Maaf, terjadi kesalahan: " +
             error.message;
     } finally {
-      
+        // Aktifkan kembali input
+        userInput.disabled = false;
+        button.disabled = false;
+        button.textContent = "Kirim";
+        userInput.focus();
+    }
+});
